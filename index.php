@@ -39,6 +39,8 @@ $dao = new DAO();
                     <td>' . $user[2] . '</td>
                     <td>' . $user[5] . '</td>
                     <td>';
+                    //afficher la button de modification que le pour le profil connecter 
+
                     if ($user[3] == $_SESSION['email']) {
                         echo '<a href="updateUser.php?userId=' . $user['0'] . '" class="btn btn-primary" >
                             <i class="fa-solid fa-pen-to-square"></i>
